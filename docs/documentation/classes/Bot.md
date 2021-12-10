@@ -40,7 +40,11 @@ The owners of the bot
 ### `._onInteractionCreate(interaction)` { data-toc-label='_onInteractionCreate' }
 The default interaction handler, you may need to explicitely call this if you add your own listeners on the `interactionCreate` event, but want the default command handling to work regardless.
 
-**Returns: [Promise]&lt;([Message]|[APIMessage])&gt;**
+| PARAMETER   | TYPE        | DESCRIPTION         |
+| :-------:   | :---------: | :-----------------: |
+| interaction | [Interaction] | The interaction to be handled |
+
+**Returns: [Promise]&lt;([Message]|[APIMessage]|*undefined*)&gt;**
 
 **Examples:**
 ```js
@@ -61,9 +65,9 @@ bot.on('interactionCreate', interaction => {
 
 [Client]: https://discord.js.org/#/docs/main/stable/class/Client
 [Message]: https://discord.js.org/#/docs/main/stable/class/Message
+[Interaction]: https://discord.js.org/#/docs/main/stable/class/Interaction
 
 [APIMessage]: https://discord.com/developers/docs/resources/channel#message-object
-
 [Promise]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
 [Array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 [String]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
