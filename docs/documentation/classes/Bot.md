@@ -14,7 +14,7 @@ new Bot(options);
 
 ## Properties
 
-### `.commands` { data-toc-label='commandss' }
+### `.commands` { data-toc-label='commands' }
 All commands currently loaded
 
 **Type: [CommandManager]**
@@ -38,7 +38,7 @@ The owners of the bot
 ## Methods
 
 ### `._onInteractionCreate(interaction)` { data-toc-label='_onInteractionCreate' }
-The default interaction handler, you may need to explicitely call this if you add your own listeners on the `interactionCreate` event
+The default interaction handler, you may need to explicitely call this if you add your own listeners on the `interactionCreate` event, but want the default command handling to work regardless.
 
 **Returns: [Promise]&lt;([Message]|[APIMessage])&gt;**
 

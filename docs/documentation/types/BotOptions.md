@@ -3,7 +3,7 @@
 Options for a bot.
 
 ## Types
-- [ClientOptions :fontawesome-solid-external-link-alt:](https://discord.js.org/#/docs/main/stable/typedef/ClientOptions)
+- [ClientOptions]
 
 | Parameter | Type                    | Optional                  | Default | Description |
 | :-------: | :---------------------: | :-----------------------: | :-----: | :---------: |
@@ -17,6 +17,8 @@ Options for a bot.
 [Module]: ../classes/Module.md
 [EmbedFactory]: ../classes/EmbedFactory.md
 [EmbedFactoryOptions]: EmbedFactoryOptions.md
+
+[ClientOptions]: https://discord.js.org/#/docs/main/stable/typedef/ClientOptions
 
 [Array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 [String]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
