@@ -8,9 +8,9 @@ The main bot class.
 new Bot(options);
 ```
 
-| PARAMETER | TYPE                        | DESCRIPTION         |
-| :-------: | :-------------------------: | :-----------------: |
-| options   | [BotOptions](BotOptions.md) | Options for the bot |
+| PARAMETER | TYPE         | DESCRIPTION         |
+| :-------: | :----------: | :-----------------: |
+| options   | [BotOptions] | Options for the bot |
 
 ## Properties
 
@@ -33,14 +33,14 @@ The modules this bot loaded with
 ### `.owners` { data-toc-label='owners' }
 The owners of the bot
 
-**Type: [Array]&lt;String&gt;**
+**Type: [Array]&lt;[String]&gt;**
 
 ## Methods
 
 ### `._onInteractionCreate(interaction)` { data-toc-label='_onInteractionCreate' }
 The default interaction handler, you may need to explicitely call this if you add your own listeners on the `interactionCreate` event
 
-**Returns: [Promise]&lt;([Message][]|[APIMessage])&gt;**
+**Returns: [Promise]&lt;([Message]|[APIMessage])&gt;**
 
 **Examples:**
 ```js
@@ -57,6 +57,7 @@ bot.on('interactionCreate', interaction => {
 [Module]: Module.md
 [CommandManager]: CommandManager.md
 [EmbedFactory]: EmbedFactory.md
+[BotOptions]: ../types/BotOptions.md
 
 [Client]: https://discord.js.org/#/docs/main/stable/class/Client
 [Message]: https://discord.js.org/#/docs/main/stable/class/Message
