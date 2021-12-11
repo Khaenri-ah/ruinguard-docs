@@ -8,4 +8,4 @@ So to use RuinGuard, in your bot's `package.json` file, add this key value pair:
 "type" : "module"
 ```
 
-This will enable usage of top level `await` keyword in the bot code. 
+This will enable usage of top level `await` keyword in the bot code.

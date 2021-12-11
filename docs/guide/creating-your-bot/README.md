@@ -6,7 +6,7 @@ Open your code editor and create a new file. We suggest that you save the file a
 
 Here's the base code to get you started:
 
-```js
+```javascript
 // Import necessary classes
 import { Bot } from "@ruinguard/core";
 import essentials from "@ruinguard/essentials";

@@ -1,4 +1,4 @@
-#Embed Factory
+# Embed Factory
 
 .markdown()
 
@@ -6,7 +6,7 @@ This is a Markdown to Embed parser.
 
 Usage:
 
-```js
+```javascript
 interaction.markdown(`
   img:https://hi.test/image.png tm:${Date.now()}
 tmb:https://hi.test/thumb.png clr:0x33aa22

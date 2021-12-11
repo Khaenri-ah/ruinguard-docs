@@ -8,7 +8,7 @@ But in Ruinguard you make JS objects & pass it to the command function.
 
 For example, referring to this sample [code](https://discord.com/developers/docs/interactions/application-commands#making-a-global-command) (See the `json = {` part)
 
-```js
+```javascript
 import { Command } from "@ruinguard/core";
 
 export default new Command({
@@ -58,7 +58,7 @@ async run(interaction){
 
 Create a `deploy-commands.js` file in your project directory. This file will be used to register & update the slash commands for your Discord Bot.
 
-```js
+```javascript
 import { Module } from '@ruinguard/core';
 import essentials from '@ruinguard/essentials';
 import moderation from '@ruinguard/moderation';
