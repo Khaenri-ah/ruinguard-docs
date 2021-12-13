@@ -1,10 +1,18 @@
 # Embed Factory
 
-.markdown()
+Returns Embed
+
+## Methods
+
+### `.markdown(string)` { data-toc-label='markdown' }
 
 This is a Markdown to Embed parser.
 
-Usage:
+PARAMETER |    TYPE    |              DESCRIPTION
+:-------: | :--------: | :-----------------------------------:
+ string   | [Markdown] | The Markdown text to be sent as embed
+
+**Examples:**
 
 ```javascript
 interaction.markdown(`
@@ -24,3 +32,18 @@ so is this one
 # this one isn't
 they need a value though`)
 ```
+
+### `.embed(string)` { data-toc-label='embed'}
+
+PARAMETER |   TYPE   |         DESCRIPTION
+:-------: | :------: | :--------------------------:
+ string   | [String] | The text to be sent as embed
+
+**Examples:**
+
+```javascript
+interaction.embed(`my current ping: ${interaction.client.ws.ping}ms`);
+```
+
+[markdown]: https://www.markdownguide.org/
+[string]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
