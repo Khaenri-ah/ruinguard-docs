@@ -44,7 +44,7 @@ The owners of the bot
 
 ### `._onInteractionCreate(interaction)` { data-toc-label='_onInteractionCreate' }
 
-The default interaction handler, you may need to explicitely call this if you add your own listeners on the `interactionCreate` event, but want the default command handling to work regardless.
+The default interaction handler, you may need to explicitly call this if you add your own listeners on the `interactionCreate` event, but want the default command handling to work regardless.
 
  PARAMETER  |     TYPE      |          DESCRIPTION
 :---------: | :-----------: | :---------------------------:
