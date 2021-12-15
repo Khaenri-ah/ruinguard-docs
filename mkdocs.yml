@@ -34,3 +34,17 @@ markdown_extensions:
       anchorlink: true
   - admonition
   - pymdownx.details
+
+nav:
+  - RuinGuard: 'index.md'
+  - Guide:
+    - Introduction: 'guide/index.md'
+    - Getting Started:
+      - Preparations: 'guide/getting-started/install.md'
+      - Creating Your Bot: 'guide/getting-started/bot.md'
+  - Documentation:
+    - Classes:
+      - Bot: 'documentation/classes/Bot.md'
+      - EmbedFactory: 'documentation/classes/EmbedFactory.md'
+    - Types:
+      - BotOptions: 'documentation/types/BotOptions.md'
