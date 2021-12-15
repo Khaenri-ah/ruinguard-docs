@@ -75,4 +75,10 @@ And that's it! With all the necessities installed, you're almost ready to start 
 
 While you are coding, it's possible to run into numerous syntax errors or code in an inconsistent style. You should install a linter to ease these troubles. While code editors generally can point out syntax errors, linters coerce your code into a specific style as defined by the configuration. While this is not required, it is advised.
 
-We recommend [ESLint](https://eslint.org/)
+We recommend [ESLint](https://eslint.org/). You may follow DJS guide on [setting up a linter](https://discordjs.guide/preparations/setting-up-a-linter.html).
+
+## Next steps
+
+DJS Guide perfectly explains how to [setup a bot application](https://discordjs.guide/preparations/setting-up-a-bot-application.html) and [adding your bot to servers](https://discordjs.guide/preparations/adding-your-bot-to-servers.html).
+
+Follow those guides before proceeding ahead!
