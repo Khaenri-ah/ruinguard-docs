@@ -61,13 +61,52 @@ Create a `deploy-commands.js` file in your project directory. This file will be 
 ```javascript
 import { Module } from '@ruinguard/core';
 import essentials from '@ruinguard/essentials';
-import moderation from '@ruinguard/moderation';
 import { config as ENV } from 'dotenv';
 ENV();
 
-await Module.registerGuildCommands([essentials, moderation], {
+await Module.registerGuildCommands([essentials], {
   app: process.env.CLIENTID,
   guild: process.env.GUILDID
   token: process.env.TOKEN,
 }).then(console.log);
 ```
+
+### Command Handling
+
+Since the speciality of RuinGuard is modularity, we will need another script which will act as command importer.<br>
+This command importer will then be imported as a module. This will make things a bit easy in long run.<br>
+
+Else it would be a hassle to import all individual commands one by one.
+
+Create a file named `CommandIndex.js` with the following code:
+
+```javascript
+import { Module } from "@ruinguard/core";
+import { getDir } from "file-ez";
+
+export default await new Module({
+  commands: getDir("./commands").path,
+  intents: [1 << 0]
+});
+```
+
+This script will now automatically import all commands into itself acting as a module.
+
+Import this module into `deploy-commands.js` file:
+
+```diff
+> import { Module } from '@ruinguard/core';
+> import essentials from '@ruinguard/essentials';
++ import commands from "./CommandIndex.js";
+> import { config as ENV } from 'dotenv';
+> ENV();
+
+- await Module.registerGuildCommands([essentials], {
++ await Module.registerGuildCommands([essentials, commands], {
+>  app: process.env.CLIENTID,
+>  guild: process.env.GUILDID
+>  token: process.env.TOKEN,
+> }).then(console.log);
+```
+
+Now to add your commands, create a folder named`commands`.
