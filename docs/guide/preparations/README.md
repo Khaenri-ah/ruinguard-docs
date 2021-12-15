@@ -4,16 +4,20 @@
 
 To use RuinGuard, you'll need to install [Node.js](https://nodejs.org/). RuinGuard requires Node v16.6.0 or higher.
 
-To check if you already have Node installed on your machine (e.g., if you're using a VPS), run `node -v` in your terminal. If it outputs `v16.6.0` or higher, then you're good to go! Otherwise, continue reading.
+To check if you already have Node installed on your machine, run `node -v` in your terminal. If it outputs `v16.6.0` or higher, then you're good to go! Otherwise, continue reading.
 
-On Windows, download the latest version from [the Node.js website](https://nodejs.org/), open the setup file, and follow the steps from the installer.
+On Windows:<br>
+
+- Download the latest version from [the Node.js website](https://nodejs.org/), open the setup file, and follow the steps from the installer.
 
 On macOS, either:
 
 - Download the latest version [the Node.js website](https://nodejs.org/), open the package installer, and follow the instructions
 - Use a package manager like [Homebrew](https://brew.sh/) with the command `brew install node`
 
-On Linux, you can consult [this page](https://nodejs.org/en/download/package-manager/) to determine how you should install Node.
+On Linux:<br>
+
+- Consult [this page](https://nodejs.org/en/download/package-manager/) to determine how you should install Node.
 
 ## Preparing the essentials
 
@@ -49,7 +53,7 @@ This is the next command you'll be running. This command creates a `package.json
 
 This command will ask you a sequence of questions–you should fill them out as you see fit. If you're not sure of something or want to skip it as a whole, leave it blank and press enter.
 
-To get started quickly, you can run the following command to have it fill out everything for you.
+To get started quickly, you can run the following command to have it fill out everything for you. Works best if the command is run inside a Git repository or similar.
 
 ```sh
 npm init esm -y
@@ -69,4 +73,6 @@ And that's it! With all the necessities installed, you're almost ready to start 
 
 ## Installing a linter
 
-While you are coding, it's possible to run into numerous syntax errors or code in an inconsistent style. You should [install a linter](/preparations/setting-up-a-linter.md) to ease these troubles. While code editors generally can point out syntax errors, linters coerce your code into a specific style as defined by the configuration. While this is not required, it is advised.
+While you are coding, it's possible to run into numerous syntax errors or code in an inconsistent style. You should install a linter to ease these troubles. While code editors generally can point out syntax errors, linters coerce your code into a specific style as defined by the configuration. While this is not required, it is advised.
+
+We recommend [ESLint](https://eslint.org/)
