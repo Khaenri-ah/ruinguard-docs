@@ -32,3 +32,5 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - toc:
       anchorlink: true
+  - admonition
+  - pymdownx.details
