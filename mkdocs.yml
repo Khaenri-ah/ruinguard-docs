@@ -1,5 +1,6 @@
 site_name: RuinGuard
-repo_url: https://github.com/SayuMains/RuinGuard
+repo_url: https://github.com/Khaenri-ah/ruinguard-docs
+edit_uri: edit/main/docs/
 theme:
   name: material
   logo: assets/icon.png
@@ -31,3 +32,5 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - toc:
       anchorlink: true
+  - admonition
+  - pymdownx.details

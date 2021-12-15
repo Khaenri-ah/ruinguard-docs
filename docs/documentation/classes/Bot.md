@@ -1,53 +1,60 @@
 # Bot
-**extends [Client][]**
+
+**extends [Client]**
 
 The main bot class.
 
 ## Constructor
-```js
+
+```javascript
 new Bot(options);
 ```
 
-| PARAMETER | TYPE         | DESCRIPTION         |
-| :-------: | :----------: | :-----------------: |
-| options   | [BotOptions] | Options for the bot |
+PARAMETER |     TYPE     |     DESCRIPTION
+:-------: | :----------: | :-----------------:
+ options  | [BotOptions] | Options for the bot
 
 ## Properties
 
 ### `.commands` { data-toc-label='commands' }
+
 All commands currently loaded
 
 **Type: [CommandManager]**
 
 ### `.embeds` { data-toc-label='embeds' }
+
 The EmbedFactory of this bot
 
 **Type: [EmbedFactory]**
 
-
 ### `.modules` { data-toc-label='modules' }
+
 The modules this bot loaded with
 
-**Type: [Array]&lt;[Module]&gt;**
+**Type: [Array]<[Module]>**
 
 ### `.owners` { data-toc-label='owners' }
+
 The owners of the bot
 
-**Type: [Array]&lt;[String]&gt;**
+**Type: [Array]<[String]>**
 
 ## Methods
 
 ### `._onInteractionCreate(interaction)` { data-toc-label='_onInteractionCreate' }
-The default interaction handler, you may need to explicitely call this if you add your own listeners on the `interactionCreate` event, but want the default command handling to work regardless.
 
-| PARAMETER   | TYPE        | DESCRIPTION         |
-| :-------:   | :---------: | :-----------------: |
-| interaction | [Interaction] | The interaction to be handled |
+The default interaction handler, you may need to explicitly call this if you add your own listeners on the `interactionCreate` event, but want the default command handling to work regardless.
 
-**Returns: [Promise]&lt;([Message]|[APIMessage]|*undefined*)&gt;**
+ PARAMETER  |     TYPE      |          DESCRIPTION
+:---------: | :-----------: | :---------------------------:
+interaction | [Interaction] | The interaction to be handled
+
+**Returns: [Promise]<([Message]|[APIMessage]|_undefined_)>**
 
 **Examples:**
-```js
+
+```javascript
 // custom interactionCreate hook
 bot.on('interactionCreate', interaction => {
   console.log('Interaction received!');
@@ -56,18 +63,14 @@ bot.on('interactionCreate', interaction => {
 });
 ```
 
-
-
-[Module]: Module.md
-[CommandManager]: CommandManager.md
-[EmbedFactory]: EmbedFactory.md
-[BotOptions]: ../types/BotOptions.md
-
-[Client]: https://discord.js.org/#/docs/main/stable/class/Client
-[Message]: https://discord.js.org/#/docs/main/stable/class/Message
-[Interaction]: https://discord.js.org/#/docs/main/stable/class/Interaction
-
-[APIMessage]: https://discord.com/developers/docs/resources/channel#message-object
-[Promise]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
-[Array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
-[String]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+[apimessage]: https://discord.com/developers/docs/resources/channel#message-object
+[array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+[botoptions]: ../types/BotOptions.md
+[client]: https://discord.js.org/#/docs/main/stable/class/Client
+[commandmanager]: CommandManager.md
+[embedfactory]: EmbedFactory.md
+[interaction]: https://discord.js.org/#/docs/main/stable/class/Interaction
+[message]: https://discord.js.org/#/docs/main/stable/class/Message
+[module]: Module.md
+[promise]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+[string]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
