@@ -8,16 +8,16 @@ To check if you already have Node installed on your machine, run `node -v` in yo
 
 On Windows:<br>
 
-- Download the latest version from [the Node.js website](https://nodejs.org/), open the setup file, and follow the steps from the installer.
+-   Download the latest version from [the Node.js website](https://nodejs.org/), open the setup file, and follow the steps from the installer.
 
 On macOS, either:
 
-- Download the latest version [the Node.js website](https://nodejs.org/), open the package installer, and follow the instructions
-- Use a package manager like [Homebrew](https://brew.sh/) with the command `brew install node`
+-   Download the latest version [the Node.js website](https://nodejs.org/), open the package installer, and follow the instructions
+-   Use a package manager like [Homebrew](https://brew.sh/) with the command `brew install node`
 
 On Linux:<br>
 
-- Consult [this page](https://nodejs.org/en/download/package-manager/) to determine how you should install Node.
+-   Consult [this page](https://nodejs.org/en/download/package-manager/) to determine how you should install Node.
 
 ## Preparing the essentials
 
@@ -29,17 +29,18 @@ Navigate to a suitable place on your machine and create a new folder named `disc
 
 On Windows, either:
 
-- `Shift + Right-click` inside your project directory and choose the "Open command window here" option
-- Press `Win + R` and run `cmd.exe`, and then `cd` into your project directory
+-   `Shift + Right-click` inside your project directory and choose the "Open command window here" option
+-   Press `Win + R` and run `cmd.exe`, and then `cd` into your project directory
 
 On macOS, either:
 
-- Open Launchpad or Spotlight and search for "Terminal"
-- In your "Applications" folder, under "Utilities", open the Terminal app
+-   Open Launchpad or Spotlight and search for "Terminal"
+-   In your "Applications" folder, under "Utilities", open the Terminal app
 
 On Linux, you can quickly open the terminal with `Ctrl + Alt + T`.
 
-_For Windows we highly recommend you to use [Windows Terminal](https://github.com/Microsoft/Terminal#installing-and-running-windows-terminal). Its default profile `Powershell` also accepts various [Linux commands](https://dev.to/heytimapple/linux-commands-that-work-in-powershell-by-default-17gd)_
+!!! tip "For Windows"
+    _We highly recommend you to use [Windows Terminal](https://github.com/Microsoft/Terminal#installing-and-running-windows-terminal). Its default profile `Powershell` also accepts various [Linux commands](https://dev.to/heytimapple/linux-commands-that-work-in-powershell-by-default-17gd)_ "
 
 With the terminal open, run the `node -v` command to make sure you've successfully installed Node.js. If it outputs `v16.6.0` or higher, great!
 
