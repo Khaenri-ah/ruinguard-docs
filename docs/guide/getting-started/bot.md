@@ -22,9 +22,9 @@ This is how you could use dotenv in an ESM module:
 import { config as ENV } from 'dotenv';
 ENV();
 
-console.log(process.env.A);             // outputs `123`
-console.log(process.env.B);             // outputs `456`
-console.log(process.env.DISCORD_TOKEN); // outputs `your-token-goes-here`
+console.log(process.env.GUILDID);        // outputs your guild ID
+console.log(process.env.CLIENTID);       // outputs bot's client ID
+console.log(process.env.TOKEN);          // outputs bot's token ID
 ```
 
 ## Creating the main file
@@ -83,7 +83,7 @@ await bot.login(process.env.TOKEN);
 
 If you run `node index.js` now, you should see it print `ready!` to the console.
 
-But where is the commands?
+But where are the commands?
 
 ### Registering commands
 
@@ -106,7 +106,6 @@ await Module.registerGuildCommands([essentials], {
 
 After running this script, you should see some commands appear in your server. Start the bot again and run one of the commands. Congratulation, You have made a working bot with RuinGuard!
 
-
-
 [djs-config]: https://discordjs.guide/creating-your-bot/#creating-configuration-files
+
 [djs-env]: https://discordjs.guide/creating-your-bot/#using-environment-variables
