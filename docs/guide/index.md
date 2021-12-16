@@ -11,7 +11,7 @@ In this Guide we will cover various topics (and also refer some guides of Offici
 
 ## Before you begin...
 
-There are some prerequisites to making a bot. Its highly recommended to have a prior knowledge of JavaScript. While you *can* make a bot with little JS & programming language, but if you come across an error, its gonna hinder your bot/module making process. 
+There are some prerequisites to making a bot. Its highly recommended to have a prior knowledge of JavaScript. While you *can* make a bot with little JS & programming concepts, but if you come across an error, its gonna hinder your bot/module making process. 
 
 If you don't know JavaScript but would like to learn about it, here are a few links to help get you started:
 
