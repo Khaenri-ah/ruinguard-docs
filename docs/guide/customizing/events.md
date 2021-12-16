@@ -2,7 +2,7 @@
 
 ## Creating a custom module
 
-If you haven't created a custom module yet, read how to do so [here][custom-cmd]. This page will assume you have custom commands.
+If you haven't created a custom module yet, read how to do so [here][custom-cmd]. This page will assume you have already added a module with custom commands.
 
 ## Adding events
 
@@ -24,26 +24,26 @@ Now add this event to your module:
 
 === "using file-ez"
     ```javascript title="module.js" hl_lines="6"
-    import { Module } from '@ruinguard/core';
+    import { Module, Intents } from '@ruinguard/core';
     import { getDir } from 'file-ez';
 
     export default await new Module({
       commands: getDir('./commands').path,
       events: getDir('./events').path,
-      intents: [1 << 0],
+      intents: [Intents.FLAGS.GUILDS],
     });
     ```
 
 === "using imports"
     ```javascript title="module.js" hl_lines="3 7"
-    import { Module } from '@ruinguard/core';
+    import { Module, Intents } from '@ruinguard/core';
     import serverInfo from './commands/server-info.js';
     import onGuildAdd from './events/guildAdd.js';
 
     export default await new Module({
       commands: [serverInfo],
       events: [onGuildAdd],
-      intents: [1 << 0],
+      intents: [Intents.FLAGS.GUILDS],
     });
     ```
 
