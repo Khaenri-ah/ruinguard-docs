@@ -200,6 +200,26 @@ Both methods have their own pros & cons. `file-ez` takes care of importing all c
 
 For convenience use `file-ez` method of importing commands.
 
+## Project Directory
+
+If you are following correctly till now, the project directory should look like this:
+
+```text
+discord-bot/
+├── node_modules
+├── commands/
+    ├── server-info.js
+    └── user-info.js
+├── index.js
+├── module.js
+├── register.js
+├── package-lock.json
+└── package.json
+```
+
+!!! info
+    For RuinGuard module developers there won't be `index.js` or `register.js`
+
 ## More about slash commands
 
 More info about slash commands can be found on the [discord.js guide][djs-cmds] or discord's [official documentation][dsc-cmds]
