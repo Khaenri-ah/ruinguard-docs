@@ -51,6 +51,9 @@ discord-bot/
 └── package.json
 ```
 
+!!! note
+    Git or any VCS initialised projects will have more files. These files will not be taken into consideration in this guide.
+
 ## Installing a linter
 
 While you are coding, it's possible to run into numerous syntax errors or code in an inconsistent style. You should install a linter to ease these troubles. While code editors generally can point out syntax errors, linters coerce your code into a specific style as defined by the configuration. While this is not required, it is advised.
