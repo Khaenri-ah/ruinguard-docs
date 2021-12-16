@@ -13,7 +13,7 @@ import { Event } from '@ruinguard/core';
 
 export default new Event({
   event: 'guildAdd',
-  
+
   run(guild) {
     console.log(`+ ${guild.name} (${guild.id})`);
   }
@@ -23,6 +23,7 @@ export default new Event({
 Now add this event to your module:
 
 === "using file-ez"
+
     ```javascript title="module.js" hl_lines="6"
     import { Module, Intents } from '@ruinguard/core';
     import { getDir } from 'file-ez';
@@ -35,6 +36,7 @@ Now add this event to your module:
     ```
 
 === "using imports"
+
     ```javascript title="module.js" hl_lines="3 7"
     import { Module, Intents } from '@ruinguard/core';
     import serverInfo from './commands/server-info.js';
@@ -49,7 +51,10 @@ Now add this event to your module:
 
 Check the [discord.js documentation][djs-events] for all the available events.
 
-
+For events also you can use [dynamic imports][dynamic-import]
 
 [custom-cmd]: commands.md#creating-a-custom-module
+
 [djs-events]: https://discord.js.org/#/docs/main/stable/class/Client
+
+[dynamic-import]: commands.md#dynamically-adding-commands
