@@ -11,9 +11,6 @@ theme:
     scheme: slate
     primary: orange
     accent: yellow
-    toggle:
-      icon: material/weather-sunny
-      name: Switch to light mode
   features:
     - navigation.instant
     - navigation.tracking
