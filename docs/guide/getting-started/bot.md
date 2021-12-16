@@ -106,6 +106,36 @@ await Module.registerGuildCommands([essentials], {
 
 After running this script, you should see some commands appear in your server. Start the bot again and run one of the commands. Congratulation, You have made a working bot with RuinGuard!
 
+!!! note "Global & Guild commands"
+    In this code snippet, we are registering commands to server. During development, its advised to register it as guild commands as commands get refreshed instantly.
+    Once the bot is ready to go public, then you can register the commands globally.  
+
+    ```diff
+    - await Module.registerGuildCommands([essentials], {
+    + await Module.registerCommands([essentials], {
+    ```
+
+!!! note "Deleting commands"
+    You might find your self in a situation to delete all commands. For that just pass an empty array to register commands. It will delete them all.
+
+    ```js
+    await Module.registerGuildCommands([], {
+      // rest of the code
+    })
+    ```
+
+If you are following correctly till now, the project directory should look like this:
+
+```text
+discord-bot/
+├── node_modules
+├── .env
+├── index.js
+├── register.js
+├── package-lock.json
+└── package.json
+```
+
 [djs-config]: https://discordjs.guide/creating-your-bot/#creating-configuration-files
 
 [djs-env]: https://discordjs.guide/creating-your-bot/#using-environment-variables
