@@ -53,6 +53,25 @@ Check the [discord.js documentation][djs-events] for all the available events.
 
 For events also you can use [dynamic imports][dynamic-import]
 
+## Project Directory
+
+If you are following correctly till now, the project directory should look like this:
+
+```text
+discord-bot/
+├── node_modules
+├── commands/
+    ├── server-info.js
+    └── user-info.js
+├── events/
+    └── guildAdd.js    
+├── index.js
+├── module.js
+├── register.js
+├── package-lock.json
+└── package.json
+```
+
 [custom-cmd]: commands.md#creating-a-custom-module
 
 [djs-events]: https://discord.js.org/#/docs/main/stable/class/Client
