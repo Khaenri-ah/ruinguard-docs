@@ -1,4 +1,4 @@
-# Installing Dependencies
+# Preparations
 
 ## Installing Node.js
 
@@ -8,9 +8,6 @@ To check if you already have Node installed on your machine, run `node -v` in yo
 
 
 ## Creating a project folder
-
-!!! warning "Windows users beware"
-    This guide is written with Unix commands and filepaths in mind
 
 Navigate to a suitable place on your machine and create a new folder named `discord-bot` (or whatever you want). Then, open a terminal window and navigate to that folder.
 
