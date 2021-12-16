@@ -97,24 +97,24 @@ Now add this command to your module:
         ```sh
         npm install file-ez
         ```
-    ```javascript title="module.js" hl_lines="2 4-7"
-    import { Module } from '@ruinguard/core';
+    ```javascript title="module.js" hl_lines="1 2 4-7"
+    import { Module, Intents } from '@ruinguard/core';
     import { getDir } from 'file-ez';
 
     export default await new Module({
       commands: getDir('./commands').path,
-      intents: [1 << 0], // this is the GUILDS intent, which allows the bot to load info about the guilds it's in
+      intents: [Intents.FLAGS.GUILDS],
     });
     ```
 
 === "using imports"
-    ```javascript title="module.js" hl_lines="2 4-7"
-    import { Module } from '@ruinguard/core';
+    ```javascript title="module.js" hl_lines="1 2 4-7"
+    import { Module, Intents } from '@ruinguard/core';
     import serverInfo from './commands/server-info.js';
 
     export default await new Module({
       commands: [serverInfo],
-      intents: [1 << 0], // this is the GUILDS intent, which allows the bot to load info about the guilds it's in
+      intents: [Intents.FLAGS.GUILDS],
     });
     ```
 
