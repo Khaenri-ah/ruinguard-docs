@@ -6,10 +6,12 @@ To use RuinGuard, you'll need to install [Node.js][node]. RuinGuard is built on 
 
 To check if you already have Node installed on your machine, run `node -v` in your terminal. If it outputs `v16.6.0` or higher, then you're good to go! Otherwise, install a version that's new enough from [the Node.js website][node-dwn] or your package manager.
 
-
 ## Creating a project folder
 
 Navigate to a suitable place on your machine and create a new folder named `discord-bot` (or whatever you want). Then, open a terminal window and navigate to that folder.
+
+!!! tip
+    We recommend you to name the folder same as the Bot/Module. Even better if a Git repository is created for the same purpose.
 
 To turn your folder into a Node.js project, run the following command:
 
@@ -21,12 +23,12 @@ This command creates a `package.json` file for you, which will keep track of the
 
 This command will ask you a sequence of questions–you should fill them out as you see fit. If you're not sure of something or want to skip it as a whole, leave it blank and press enter.
 
-To get started quickly, you can run the following command to have it fill out everything for you. Works best if the command is run inside a Git repository or similar.
+!!! tip
+    To get started quickly, you can run the following command to have it fill out everything for you. Works best if the command is run inside a Git repository or similar.
 
-```sh
-npm init esm -y
-```
-
+    ```sh
+    npm init esm -y
+    ```
 
 ## Installing RuinGuard
 
@@ -36,10 +38,9 @@ Run the following command in your terminal:
 npm install @ruinguard/core
 ```
 
-This will install the core of ruinguard, as well as its dependencies.
+This will install the core of RuinGuard, as well as its dependencies.
 
-And that's it! With all the necessities installed, you're almost ready to start coding your bot.
-
+And that's it! With all the necessities installed, you're almost ready to start coding your bot/module.
 
 ## Installing a linter
 
@@ -47,21 +48,26 @@ While you are coding, it's possible to run into numerous syntax errors or code i
 
 We recommend [ESLint]. You may want to follow the DJS guide on [setting up a linter][djs-linter].
 
-
 ## Next steps
 
 The discord.js guide perfectly explains how to [setup a bot application][djs-app] and [adding your bot to servers][djs-add].
 
 Follow those guides before proceeding!
 
-
-
 [node]: https://nodejs.org/
+
 [node-dwn]: https://nodejs.org/en/download/
+
 [npm]: https://docs.npmjs.com/about-npm
-[ESlint]: https://eslint.org/
+
+[eslint]: https://eslint.org/
+
 [djs]: https://discord.js.org/#/
+
 [djs-guide]: https://discordjs.guide
+
 [djs-linter]: https://discordjs.guide/preparations/setting-up-a-linter.html
+
 [djs-app]: https://discordjs.guide/preparations/setting-up-a-bot-application.html
+
 [djs-add]: https://discordjs.guide/preparations/adding-your-bot-to-servers.html
