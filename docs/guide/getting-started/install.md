@@ -42,6 +42,15 @@ This will install the core of RuinGuard, as well as its dependencies.
 
 And that's it! With all the necessities installed, you're almost ready to start coding your bot/module.
 
+If you are following correctly till now, the project directory should look like this:
+
+```text
+discord-bot/
+├── node_modules
+├── package-lock.json
+└── package.json
+```
+
 ## Installing a linter
 
 While you are coding, it's possible to run into numerous syntax errors or code in an inconsistent style. You should install a linter to ease these troubles. While code editors generally can point out syntax errors, linters coerce your code into a specific style as defined by the configuration. While this is not required, it is advised.
