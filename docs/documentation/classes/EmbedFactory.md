@@ -10,7 +10,7 @@ This is a Markdown to Embed parser.
 
 PARAMETER |    TYPE    |              DESCRIPTION
 :-------: | :--------: | :-----------------------------------:
- string   | [String] | The Markdown text to be sent as embed
+ string   |  [String]  | The Markdown text to be sent as embed
 
 **Returns: [MessageContent]**
 
@@ -40,7 +40,7 @@ factory.markdown(`
 
 PARAMETER |   TYPE   |         DESCRIPTION
 :-------: | :------: | :--------------------------:
- string   | [String]|[Object] | The text to be sent as embed description, or an embed object
+ string   | [String]\|[Object] | The text to be sent as embed description, or an embed object
 
  **Returns: [MessageContent]**
 
@@ -52,3 +52,4 @@ factory.create(`my current ping: ${interaction.client.ws.ping}ms`);
 
 [MessageContent]: MessageContent.md
 [string]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+[Object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
