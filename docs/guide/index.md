@@ -9,6 +9,9 @@ And you have come to right place!
 
 In this Guide we will cover various topics (and also refer some guides of Official Discord.js)
 
+!!! caution
+    Documentation is still under construction.
+
 ## Before you begin...
 
 There are some prerequisites to making a bot. Its highly recommended to have a prior knowledge of JavaScript. While you *can* make a bot with little JS & programming concepts, but if you come across an error, its gonna hinder your bot/module making process. 
