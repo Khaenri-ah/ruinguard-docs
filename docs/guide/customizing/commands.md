@@ -208,8 +208,8 @@ If you are following correctly till now, the project directory should look like 
 discord-bot/
 ├── node_modules
 ├── commands/
-    ├── server-info.js
-    └── user-info.js
+│  ├── server-info.js
+│  └── user-info.js
 ├── index.js
 ├── module.js
 ├── register.js

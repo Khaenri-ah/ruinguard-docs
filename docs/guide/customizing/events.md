@@ -57,14 +57,14 @@ For events also you can use [dynamic imports][dynamic-import]
 
 If you are following correctly till now, the project directory should look like this:
 
-```text
+```bash
 discord-bot/
 ├── node_modules
 ├── commands/
-    ├── server-info.js
-    └── user-info.js
+│   ├── server-info.js
+│   └── user-info.js
 ├── events/
-    └── guildAdd.js    
+│   └── guildAdd.js    
 ├── index.js
 ├── module.js
 ├── register.js
