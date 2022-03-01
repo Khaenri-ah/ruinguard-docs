@@ -331,20 +331,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../classes/EmbedFactory/" class="md-nav__link">
-        Class: EmbedFactory
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../classes/Event/" class="md-nav__link">
         Class: Event
       </a>
@@ -537,15 +523,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#self" class="md-nav__link">
-    self
+  <a href="#user" class="md-nav__link">
+    user
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#user" class="md-nav__link">
-    user
+  <a href="#self" class="md-nav__link">
+    self
   </a>
   
 </li>
@@ -559,34 +545,6 @@
   
 </nav>
       
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../CreateEmbedOptions/" class="md-nav__link">
-        Interface: CreateEmbedOptions
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../EmbedFactoryOptions/" class="md-nav__link">
-        Interface: EmbedFactoryOptions
-      </a>
     </li>
   
 
@@ -724,34 +682,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../RichEmbed/" class="md-nav__link">
-        Interface: RichEmbed
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../RichEmbedOptions/" class="md-nav__link">
-        Interface: RichEmbedOptions
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../TokenOptions/" class="md-nav__link">
         Interface: TokenOptions
       </a>
@@ -851,15 +781,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#self" class="md-nav__link">
-    self
+  <a href="#user" class="md-nav__link">
+    user
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#user" class="md-nav__link">
-    user
+  <a href="#self" class="md-nav__link">
+    self
   </a>
   
 </li>
@@ -888,11 +818,13 @@
 
 <h1 id="interface-commandpermissions"><a class="toclink" href="#interface-commandpermissions">Interface: CommandPermissions</a></h1>
 <h2 id="properties"><a class="toclink" href="#properties">Properties</a></h2>
-<h3 id="self"><a class="toclink" href="#self">self</a></h3>
-<p>• <strong>self</strong>: <code>Readonly</code>&lt;<code>BitField</code>&lt;<code>PermissionString</code>, <code>bigint</code>>></p>
-<hr />
 <h3 id="user"><a class="toclink" href="#user">user</a></h3>
 <p>• <strong>user</strong>: <code>Readonly</code>&lt;<code>BitField</code>&lt;<code>PermissionString</code>, <code>bigint</code>>></p>
+<p>Permissions a user needs to invoke this command</p>
+<hr />
+<h3 id="self"><a class="toclink" href="#self">self</a></h3>
+<p>• <strong>self</strong>: <code>Readonly</code>&lt;<code>BitField</code>&lt;<code>PermissionString</code>, <code>bigint</code>>></p>
+<p>Permissions this bot needs to be able to execute this command properly</p>
 
               
             </article>
@@ -927,13 +859,13 @@
       
       
         
-        <a href="../CreateEmbedOptions/" class="md-footer__link md-footer__link--next" aria-label="Next: Interface: CreateEmbedOptions" rel="next">
+        <a href="../EventOptions/" class="md-footer__link md-footer__link--next" aria-label="Next: Interface: EventOptions" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Interface: CreateEmbedOptions
+              Interface: EventOptions
             </div>
           </div>
           <div class="md-footer__button md-icon">

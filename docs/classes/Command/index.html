@@ -346,8 +346,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#flags" class="md-nav__link">
-    flags
+  <a href="#name" class="md-nav__link">
+    name
   </a>
   
 </li>
@@ -360,8 +360,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#name" class="md-nav__link">
-    name
+  <a href="#flags" class="md-nav__link">
+    flags
   </a>
   
 </li>
@@ -443,20 +443,6 @@
     <li class="md-nav__item">
       <a href="../CooldownManager/" class="md-nav__link">
         Class: CooldownManager
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../EmbedFactory/" class="md-nav__link">
-        Class: EmbedFactory
       </a>
     </li>
   
@@ -631,34 +617,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/CreateEmbedOptions/" class="md-nav__link">
-        Interface: CreateEmbedOptions
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../interfaces/EmbedFactoryOptions/" class="md-nav__link">
-        Interface: EmbedFactoryOptions
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../interfaces/EventOptions/" class="md-nav__link">
         Interface: EventOptions
       </a>
@@ -773,34 +731,6 @@
     <li class="md-nav__item">
       <a href="../../interfaces/RegisterGuildCommandOptions/" class="md-nav__link">
         Interface: RegisterGuildCommandOptions
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../interfaces/RichEmbed/" class="md-nav__link">
-        Interface: RichEmbed
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../interfaces/RichEmbedOptions/" class="md-nav__link">
-        Interface: RichEmbedOptions
       </a>
     </li>
   
@@ -939,8 +869,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#flags" class="md-nav__link">
-    flags
+  <a href="#name" class="md-nav__link">
+    name
   </a>
   
 </li>
@@ -953,8 +883,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#name" class="md-nav__link">
-    name
+  <a href="#flags" class="md-nav__link">
+    flags
   </a>
   
 </li>
@@ -1012,56 +942,68 @@
 <h2 id="constructors"><a class="toclink" href="#constructors">Constructors</a></h2>
 <h3 id="constructor"><a class="toclink" href="#constructor">constructor</a></h3>
 <p>• <strong>new Command</strong>(<code>options</code>)</p>
+<p>Creates a new command</p>
 <h4 id="parameters"><a class="toclink" href="#parameters">Parameters</a></h4>
 <table>
 <thead>
 <tr>
 <th align="left">Name</th>
 <th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td align="left"><code>options</code></td>
 <td align="left"><a href="../../interfaces/CommandOptions/"><code>CommandOptions</code></a></td>
+<td align="left">Options for this command</td>
 </tr>
 </tbody>
 </table>
 <h2 id="properties"><a class="toclink" href="#properties">Properties</a></h2>
 <h3 id="data"><a class="toclink" href="#data">data</a></h3>
 <p>• <strong>data</strong>: <code>ApplicationCommandData</code></p>
-<hr />
-<h3 id="flags"><a class="toclink" href="#flags">flags</a></h3>
-<p>• <strong>flags</strong>: <a href="../CommandFlags/"><code>CommandFlags</code></a></p>
-<hr />
-<h3 id="function"><a class="toclink" href="#function">function</a></h3>
-<p>• <strong>function</strong>: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function"><code>Function</code></a></p>
+<p>The data sent to discord when registering this command</p>
 <hr />
 <h3 id="name"><a class="toclink" href="#name">name</a></h3>
 <p>• <strong>name</strong>: <code>string</code></p>
+<p>The name of this command</p>
+<hr />
+<h3 id="function"><a class="toclink" href="#function">function</a></h3>
+<p>• <strong>function</strong>: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function"><code>Function</code></a></p>
+<p><a href="../../interfaces/CommandOptions/#run">CommandOptions.run</a></p>
+<hr />
+<h3 id="flags"><a class="toclink" href="#flags">flags</a></h3>
+<p>• <strong>flags</strong>: <a href="../CommandFlags/"><code>CommandFlags</code></a></p>
+<p>This command's flags</p>
 <hr />
 <h3 id="permissions"><a class="toclink" href="#permissions">permissions</a></h3>
 <p>• <strong>permissions</strong>: <a href="../../interfaces/CommandPermissions/"><code>CommandPermissions</code></a></p>
+<p>The permissions required to invoke or execute this command</p>
 <h2 id="methods"><a class="toclink" href="#methods">Methods</a></h2>
 <h3 id="run"><a class="toclink" href="#run">run</a></h3>
 <p>▸ <strong>run</strong>(<code>interaction</code>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"><code>Promise</code></a>&lt;<code>any</code>></p>
+<p>Runs this command</p>
 <h4 id="parameters_1"><a class="toclink" href="#parameters_1">Parameters</a></h4>
 <table>
 <thead>
 <tr>
 <th align="left">Name</th>
 <th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td align="left"><code>interaction</code></td>
 <td align="left"><code>BaseCommandInteraction</code>&lt;<code>"cached"</code>></td>
+<td align="left">The interaction that triggered this command</td>
 </tr>
 </tbody>
 </table>
 <h4 id="returns"><a class="toclink" href="#returns">Returns</a></h4>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"><code>Promise</code></a>&lt;<code>any</code>></p>
+<p>The return value of <a href="#function">Command.function</a></p>
 
               
             </article>

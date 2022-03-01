@@ -353,33 +353,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#methods" class="md-nav__link">
-    Methods
-  </a>
-  
-    <nav class="md-nav" aria-label="Methods">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#add" class="md-nav__link">
-    add
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#check" class="md-nav__link">
-    check
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#constructors" class="md-nav__link">
     Constructors
   </a>
@@ -426,24 +399,37 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add" class="md-nav__link">
+    add
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check" class="md-nav__link">
+    check
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
       
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../EmbedFactory/" class="md-nav__link">
-        Class: EmbedFactory
-      </a>
     </li>
   
 
@@ -617,34 +603,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/CreateEmbedOptions/" class="md-nav__link">
-        Interface: CreateEmbedOptions
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../interfaces/EmbedFactoryOptions/" class="md-nav__link">
-        Interface: EmbedFactoryOptions
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../interfaces/EventOptions/" class="md-nav__link">
         Interface: EventOptions
       </a>
@@ -771,34 +729,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/RichEmbed/" class="md-nav__link">
-        Interface: RichEmbed
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../interfaces/RichEmbedOptions/" class="md-nav__link">
-        Interface: RichEmbedOptions
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../interfaces/TokenOptions/" class="md-nav__link">
         Interface: TokenOptions
       </a>
@@ -890,33 +820,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#methods" class="md-nav__link">
-    Methods
-  </a>
-  
-    <nav class="md-nav" aria-label="Methods">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#add" class="md-nav__link">
-    add
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#check" class="md-nav__link">
-    check
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#constructors" class="md-nav__link">
     Constructors
   </a>
@@ -963,6 +866,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add" class="md-nav__link">
+    add
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check" class="md-nav__link">
+    check
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -981,25 +911,60 @@
 
 
 <h1 id="class-cooldownmanager"><a class="toclink" href="#class-cooldownmanager">Class: CooldownManager</a></h1>
-<h2 id="methods"><a class="toclink" href="#methods">Methods</a></h2>
-<h3 id="add"><a class="toclink" href="#add">add</a></h3>
-<p>▸ <strong>add</strong>(<code>key</code>, <code>cooldown?</code>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"><code>Promise</code></a>&lt;<code>void</code>></p>
+<h2 id="constructors"><a class="toclink" href="#constructors">Constructors</a></h2>
+<h3 id="constructor"><a class="toclink" href="#constructor">constructor</a></h3>
+<p>• <strong>new CooldownManager</strong>(<code>cooldown?</code>)</p>
+<p>Creates a new cooldown manager</p>
 <h4 id="parameters"><a class="toclink" href="#parameters">Parameters</a></h4>
 <table>
 <thead>
 <tr>
 <th align="left">Name</th>
 <th align="left">Type</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>cooldown</code></td>
+<td align="left"><code>number</code></td>
+<td align="left"><code>0</code></td>
+<td align="left">The default cooldown in miliseconds</td>
+</tr>
+</tbody>
+</table>
+<h2 id="properties"><a class="toclink" href="#properties">Properties</a></h2>
+<h3 id="cooldown"><a class="toclink" href="#cooldown">cooldown</a></h3>
+<p>• <strong>cooldown</strong>: <code>number</code></p>
+<p>The default cooldown in miliseconds</p>
+<hr />
+<h3 id="cooldowns"><a class="toclink" href="#cooldowns">cooldowns</a></h3>
+<p>• <strong>cooldowns</strong>: <code>Keyv</code>&lt;<code>number</code>></p>
+<p>All current cooldowns</p>
+<h2 id="methods"><a class="toclink" href="#methods">Methods</a></h2>
+<h3 id="add"><a class="toclink" href="#add">add</a></h3>
+<p>▸ <strong>add</strong>(<code>key</code>, <code>cooldown?</code>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"><code>Promise</code></a>&lt;<code>void</code>></p>
+<p>Adds a new cooldown</p>
+<h4 id="parameters_1"><a class="toclink" href="#parameters_1">Parameters</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td align="left"><code>key</code></td>
 <td align="left"><code>string</code></td>
+<td align="left">The identifier for this cooldown</td>
 </tr>
 <tr>
 <td align="left"><code>cooldown</code></td>
 <td align="left"><code>number</code></td>
+<td align="left">How long this cooldown should last for, in miliseconds</td>
 </tr>
 </tbody>
 </table>
@@ -1008,49 +973,27 @@
 <hr />
 <h3 id="check"><a class="toclink" href="#check">check</a></h3>
 <p>▸ <strong>check</strong>(<code>key</code>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"><code>Promise</code></a>&lt;<code>number</code> | <code>false</code>></p>
-<h4 id="parameters_1"><a class="toclink" href="#parameters_1">Parameters</a></h4>
-<table>
-<thead>
-<tr>
-<th align="left">Name</th>
-<th align="left">Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><code>key</code></td>
-<td align="left"><code>string</code></td>
-</tr>
-</tbody>
-</table>
-<h4 id="returns_1"><a class="toclink" href="#returns_1">Returns</a></h4>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"><code>Promise</code></a>&lt;<code>number</code> | <code>false</code>></p>
-<h2 id="constructors"><a class="toclink" href="#constructors">Constructors</a></h2>
-<h3 id="constructor"><a class="toclink" href="#constructor">constructor</a></h3>
-<p>• <strong>new CooldownManager</strong>(<code>cooldown?</code>)</p>
+<p>Checks if a cooldown exists</p>
 <h4 id="parameters_2"><a class="toclink" href="#parameters_2">Parameters</a></h4>
 <table>
 <thead>
 <tr>
 <th align="left">Name</th>
 <th align="left">Type</th>
-<th align="left">Default value</th>
+<th align="left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>cooldown</code></td>
-<td align="left"><code>number</code></td>
-<td align="left"><code>0</code></td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">The identifier for this cooldown</td>
 </tr>
 </tbody>
 </table>
-<h2 id="properties"><a class="toclink" href="#properties">Properties</a></h2>
-<h3 id="cooldown"><a class="toclink" href="#cooldown">cooldown</a></h3>
-<p>• <strong>cooldown</strong>: <code>number</code></p>
-<hr />
-<h3 id="cooldowns"><a class="toclink" href="#cooldowns">cooldowns</a></h3>
-<p>• <strong>cooldowns</strong>: <code>Keyv</code>&lt;<code>number</code>></p>
+<h4 id="returns_1"><a class="toclink" href="#returns_1">Returns</a></h4>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"><code>Promise</code></a>&lt;<code>number</code> | <code>false</code>></p>
+<p>How long this cooldown still lasts, if found</p>
 
               
             </article>
@@ -1085,13 +1028,13 @@
       
       
         
-        <a href="../EmbedFactory/" class="md-footer__link md-footer__link--next" aria-label="Next: Class: EmbedFactory" rel="next">
+        <a href="../Event/" class="md-footer__link md-footer__link--next" aria-label="Next: Class: Event" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Class: EmbedFactory
+              Class: Event
             </div>
           </div>
           <div class="md-footer__button md-icon">
