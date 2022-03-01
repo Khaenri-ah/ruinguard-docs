@@ -31,5 +31,6 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - toc:
       anchorlink: true
+      toc_depth: 3
   - pymdownx.tabbed:
       alternate_style: true
