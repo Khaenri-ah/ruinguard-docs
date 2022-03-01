@@ -1,0 +1,35 @@
+site_name: RuinGuard
+docs_dir: src/
+site_dir: docs/
+repo_url: https://github.com/Khaenri-ah/ruinguard-core
+edit_uri: https://github.com/Khaenri-ah/ruinguard-docs/edit/main/docs/
+theme:
+  name: material
+  logo: media/icon.png
+  favicon: media/icon.png
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    scheme: slate
+    primary: orange
+    accent: yellow
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+markdown_extensions:
+  - attr_list
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - toc:
+      anchorlink: true
+  - pymdownx.tabbed:
+      alternate_style: true
